@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+}
+
+.logo span {
+  font-size: 2rem;
+}
+
+/* Header  */
+header {
+  position: absolute;
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 1.875rem 0;
+  border-bottom: 1px solid #ffffff45;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+
+  /* Deley color when hover  */
+  transition: all 0.5s;
+}
+
+/* li.active cần phải chấm sát nhau  */
+header nav ul li.active a {
+  color: red;
+}
+
+
+header nav ul li:hover a {
+  color: red;
+
+}
+
+/* carousel  */
+#carousel {
+  background-image: url(../images/home_slider.jpg);
+  height: 700px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    /* Không cho hình bị lặp lại  */
+    background-repeat: no-repeat;
+    /* Cho hình full kích thước  */
+    background-size: cover;
+}
+
+.carousel__content {
+  text-align: center;
+  color: white;
+}
+
+.carousel__content p {
+  font-size: 1.2rem;
+}
+
+.carousel__content h1 {
+
+  font-size: 4rem;
+}
+
+.carousel__content button {
+  background-color: #e62b4a;
+    padding: 0.6rem 2.1rem;
+    text-transform: uppercase;
+    border: 1px solid #e62b4a;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    color: white;
+    transition: 0.5s;
+}
+
+.carousel__content button:hover {
+  background-color: #af2239;
+}
